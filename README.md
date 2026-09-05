@@ -46,8 +46,8 @@ This tool was born out of a real-world workflow problem:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/Kitsu_ffmpeg_Multi-Tool.git](https://github.com/YOUR_USERNAME/Kitsu_ffmpeg_Multi-Tool.git)
-   cd Kitsu_ffmpeg_Multi-Tool
+   git clone [https://github.com/RenjiAkairu/Kitsu_FFmpeg_Multi-Tool.git](https://github.com/RenjiAkairu/Kitsu_FFmpeg_Multi-Tool.git)
+   cd Kitsu_FFmpeg_Multi-Tool
     ```
 
 2. **Install required dependencies:**
