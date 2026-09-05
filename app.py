@@ -62,7 +62,7 @@ class FFmpegGUI(TkinterDnD_CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("Kitsu ffmpeg Multi-Tool (Convert, Extract2Audio, Audio2Video)")
+        self.title("Kitsu FFmpeg Multi-Tool (Convert, Extract2Audio, Audio2Video)")
         self.geometry("1250x850")
         self.minsize(1050, 750)
 
