@@ -1,5 +1,3 @@
-# Kitsu_ffmpeg_Multi-Tool
-
 # 🦊 Kitsu FFmpeg Multi-Tool
 
 A clean, modern, dark-themed FFmpeg GUI built with Python and CustomTkinter. Designed to eliminate the hassle of memorizing complex FFmpeg command-line syntax and streamline batch processing for videos, audio extraction, and music-visual creation.
