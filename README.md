@@ -42,6 +42,19 @@ This tool was born out of a real-world workflow problem:
 
 ---
 
+### ⚙️ Why FFmpeg is Required?
+This application is a lightweight **graphical interface (GUI wrapper)** designed to generate and execute commands for you. It does not contain an internal video encoder; **FFmpeg does 100% of the media processing heavy lifting** in the background.
+
+To keep the application download size minimal (~20-30 MB instead of 150 MB+) and respect open-source licensing, FFmpeg is not bundled directly inside the binary.
+
+#### Quick Setup for Windows:
+If you do not have FFmpeg installed, the easiest way is using Windows Package Manager via Terminal/PowerShell:
+```powershell
+winget install Gyan.FFmpeg
+```
+
+---
+
 ## 🚀 Installation & Setup
 
 1. **Clone the repository:**
