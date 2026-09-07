@@ -798,7 +798,7 @@ class FFmpegGUI(TkinterDnD_CTk):
             startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
         cmd = ["ffmpeg", "-i", str(file_path)]
         try:
-            result = subprocess.run(cmd, stderr=subprocess.PIPE, stdout=subprocess.PIPE, text=True, startupinfo=startupinfo)
+            result = subprocess.run(cmd, stderr=subprocess.PIPE, stdout=subprocess.PIPE, text=True, encoding='utf-8', errors='replace', startupinfo=startupinfo)
             match = re.search(r"Duration: (\d{2}):(\d{2}):(\d{2}\.\d{2})", result.stderr)
             if match:
                 hours, minutes, seconds = match.groups()
@@ -1094,7 +1094,7 @@ class FFmpegGUI(TkinterDnD_CTk):
 
             self.after(0, lambda msg="Command: " + " ".join(cmd): self.log(msg))
 
-            self.process = subprocess.Popen(cmd, stderr=subprocess.PIPE, stdout=subprocess.PIPE, universal_newlines=True, startupinfo=startupinfo)
+            self.process = subprocess.Popen(cmd, stderr=subprocess.PIPE, stdout=subprocess.PIPE, universal_newlines=True, encoding='utf-8', errors='replace', startupinfo=startupinfo)
             
             start_time_proc = time.time()
             last_eta_update = 0
